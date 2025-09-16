@@ -151,7 +151,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "NPM",
       fontAwesomeClassname: "fab fa-npm"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -171,7 +171,7 @@ const educationInfo = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
-    },
+    }
   ]
 };
 
@@ -218,7 +218,7 @@ const workExperiences = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
-    },
+    }
   ]
 };
 

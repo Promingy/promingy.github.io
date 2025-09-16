@@ -18,7 +18,6 @@ export default function Profile() {
       const getProfileData = () => {
         fetch("/profile.json")
           .then(result => {
-            console.log('HIT', result, result.json())
             if (result.ok) {
               return result.json();
             }
@@ -42,7 +41,6 @@ export default function Profile() {
     openSource.showGithubProfile === "true" &&
     !(typeof prof === "string" || prof instanceof String)
   ) {
-    console.log('test', prof)
     return (
       <Suspense fallback={renderLoader()}>
         <GithubProfileCard prof={prof} key={prof.id} />
