@@ -168,10 +168,10 @@ const educationInfo = {
       duration: "August 2023 - January 2024",
       desc: "Completed an intensive Software Engineering program with a focus on full-stack web development and computer science fundamentals.",
       descBullets: [
-          "Built multiple full-stack web applications using JavaScript, React, Node.js, and SQL.",
-          "Collaborated on team projects following Agile and Git workflows.",
-          "Learned advanced algorithms, data structures, and best practices for software development.",
-          "Gained experience with testing, deployment, and debugging in real-world scenarios."
+        "Built multiple full-stack web applications using JavaScript, React, Node.js, and SQL.",
+        "Collaborated on team projects following Agile and Git workflows.",
+        "Learned advanced algorithms, data structures, and best practices for software development.",
+        "Gained experience with testing, deployment, and debugging in real-world scenarios."
       ]
     }
   ]
@@ -239,7 +239,7 @@ const workExperiences = {
         "Implemented AI-driven features into applications, enhancing automation and user experience.",
         "Learned Django best practices, deployment, and application architecture."
       ]
-    },
+    }
   ]
 };
 
@@ -261,7 +261,8 @@ const bigProjects = {
     {
       image: require("./assets/images/gsg.png"),
       projectName: "GreenStreetGlobal",
-      projectDesc: "Developed key features for a sustainable technology platform, focusing on web applications and dashboards to support eco-friendly initiatives.",
+      projectDesc:
+        "Developed key features for a sustainable technology platform, focusing on web applications and dashboards to support eco-friendly initiatives.",
       footerLink: [
         {
           name: "Visit Website",
@@ -272,7 +273,8 @@ const bigProjects = {
     {
       image: require("./assets/images/recipeRendezvous.png"),
       projectName: "ReceipeRendezvous",
-      projectDesc: "Built a full-stack recipe-sharing web application with user authentication, searchable recipes, and interactive features using React and Node.js.",
+      projectDesc:
+        "Built a full-stack recipe-sharing web application with user authentication, searchable recipes, and interactive features using React and Node.js.",
       footerLink: [
         {
           name: "Visit Website",
@@ -284,7 +286,8 @@ const bigProjects = {
     {
       image: require("./assets/images/pixelChat.png"),
       projectName: "PixelChat",
-      projectDesc: "Created a real-time chat application with Node.js and WebSocket integration, enabling instant messaging between users in a responsive interface.",
+      projectDesc:
+        "Created a real-time chat application with Node.js and WebSocket integration, enabling instant messaging between users in a responsive interface.",
       footerLink: [
         {
           name: "Visit Website",
@@ -295,10 +298,11 @@ const bigProjects = {
     {
       image: require("./assets/images/shiori.webp"),
       projectName: "Shiori",
-      projectDesc:"Developing a mobile-first language learning app with TypeScript, React Native, and DRF. Features a spaced repetition system for learning the Japanese writing system, an AI chat tailored to the user’s current skill level, and a book analyzer that uses custom algorithms to extract vocabulary and pronunciation from Japanese PDFs, while generating chapter summaries and comprehension questions.",
+      projectDesc:
+        "Developing a mobile-first language learning app with TypeScript, React Native, and DRF. Features a spaced repetition system for learning the Japanese writing system, an AI chat tailored to the user’s current skill level, and a book analyzer that uses custom algorithms to extract vocabulary and pronunciation from Japanese PDFs, while generating chapter summaries and comprehension questions.",
       footerLink: [
         {
-          name: "Coming Soon",
+          name: "Coming Soon"
           // url: "http://pixelchat.corbinainsworth.com/"
         }
       ]
