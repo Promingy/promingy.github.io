@@ -166,10 +166,12 @@ const educationInfo = {
       logo: require("./assets/images/aALogo.png"),
       subHeader: "Software Engineering & Computer Science",
       duration: "August 2023 - January 2024",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "Completed an intensive Software Engineering program with a focus on full-stack web development and computer science fundamentals.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          "Built multiple full-stack web applications using JavaScript, React, Node.js, and SQL.",
+          "Collaborated on team projects following Agile and Git workflows.",
+          "Learned advanced algorithms, data structures, and best practices for software development.",
+          "Gained experience with testing, deployment, and debugging in real-world scenarios."
       ]
     }
   ]
@@ -206,19 +208,38 @@ const workExperiences = {
       company: "Innovative Health Solutions",
       companylogo: require("./assets/images/ihs.png"),
       date: "Feb 2025 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Developed and maintained front-end components for health-related web applications, improving UI responsiveness and user engagement.",
+      descBullets: [
+        "Implemented dynamic dashboards using React and Redux, increasing real-time data visibility by 40%.",
+        "Collaborated with UX designers to enhance user experience and accessibility compliance.",
+        "Optimized front-end performance, reducing load times by 30%."
+      ]
+    },
+    {
+      role: "Mobile & Front-End Developer",
+      company: "GreenStand",
+      companylogo: require("./assets/images/greenstand.webp"),
+      date: "September 2025 – Present",
+      desc: "Contributing to the development of GreenStand's mobile wallet app and associated front-end components.",
+      descBullets: [
+        "Developing mobile features and UI components for GreenStand’s wallet app using React Native.",
+        "Implementing front-end functionality for web dashboards and client-facing applications.",
+        "Collaborating with the team on design and code reviews following Agile workflows."
+      ]
     },
     {
       role: "Full-Stack Software Engineer",
       company: "Iota Labs",
       companylogo: require("./assets/images/iota_logo.jpeg"),
       date: "September 2024 – November 2024",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Contributed to the development of early-stage software products, implementing core features and debugging critical issues.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Built dynamic web pages with Django templating for front-end functionality.",
+        "Developed back-end features including database models, views, and APIs.",
+        "Implemented AI-driven features into applications, enhancing automation and user experience.",
+        "Learned Django best practices, deployment, and application architecture."
       ]
-    }
+    },
   ]
 };
 
@@ -240,7 +261,7 @@ const bigProjects = {
     {
       image: require("./assets/images/gsg.png"),
       projectName: "GreenStreetGlobal",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "Developed key features for a sustainable technology platform, focusing on web applications and dashboards to support eco-friendly initiatives.",
       footerLink: [
         {
           name: "Visit Website",
@@ -251,7 +272,7 @@ const bigProjects = {
     {
       image: require("./assets/images/recipeRendezvous.png"),
       projectName: "ReceipeRendezvous",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "Built a full-stack recipe-sharing web application with user authentication, searchable recipes, and interactive features using React and Node.js.",
       footerLink: [
         {
           name: "Visit Website",
@@ -263,11 +284,22 @@ const bigProjects = {
     {
       image: require("./assets/images/pixelChat.png"),
       projectName: "PixelChat",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "Created a real-time chat application with Node.js and WebSocket integration, enabling instant messaging between users in a responsive interface.",
       footerLink: [
         {
           name: "Visit Website",
           url: "http://pixelchat.corbinainsworth.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/shiori.webp"),
+      projectName: "Shiori",
+      projectDesc:"Developing a mobile-first language learning app with TypeScript, React Native, and DRF. Features a spaced repetition system for learning the Japanese writing system, an AI chat tailored to the user’s current skill level, and a book analyzer that uses custom algorithms to extract vocabulary and pronunciation from Japanese PDFs, while generating chapter summaries and comprehension questions.",
+      footerLink: [
+        {
+          name: "Coming Soon",
+          // url: "http://pixelchat.corbinainsworth.com/"
         }
       ]
     }
@@ -416,7 +448,7 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
