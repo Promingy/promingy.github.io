@@ -43,16 +43,16 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="startup-card-image"
-                      ></img>
-                    </div>
-                  ) : null}
                   <div className="project-detail">
+                    {project.image ? (
+                      <div className="project-image">
+                        <img
+                          src={project.image}
+                          alt={project.projectName}
+                          className="startup-card-image"
+                        ></img>
+                      </div>
+                    ) : null}
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}
                     >
@@ -65,24 +65,24 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
-                    {project.footerLink ? (
-                      <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    ) : null}
                   </div>
+                  {project.footerLink ? (
+                    <div className="project-card-footer">
+                      {project.footerLink.map((link, i) => {
+                        return (
+                          <span
+                            key={i}
+                            className={
+                              isDark ? "dark-mode project-tag" : "project-tag"
+                            }
+                            onClick={() => openUrlInNewTab(link.url)}
+                          >
+                            {link.name}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  ) : null}
                 </div>
               );
             })}
