@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
@@ -8,6 +8,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import {ReactComponent as DownloadIcon} from "../../assets/images/download.svg";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -42,11 +43,19 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    href={greeting.resumeLink}
+                    target="_blank"
                     className="download-link-button"
                   >
-                    <Button text="Download my resume" />
+                    <Button text="View my resume" />
+                  </a>
+                )}
+                {greeting.resumeLink && (
+                  <a className="download-link-button icon" href={require("./ainsworth_corbin_resume.pdf")} download="ainsworth_corbin_resume.pdf">
+                    <Button text={
+                      <DownloadIcon className="download-icon"/>
+                      } 
+                    />
                   </a>
                 )}
               </div>
